@@ -12,9 +12,9 @@ description: "Overview of Primero AI security practices and technical safeguards
 ## Overview
 This page summarizes how Primero AI protects customer data and systems based on our platform implementation and operating practices.
 
-## Data protection & encryption
-- **Application-layer encryption for sensitive configs.** Connection configuration and other secrets are encrypted before storage using AES-256-GCM with a key derived via scrypt from `RESOURCE_CONFIG_SECRET`.  
-- **Token secret protection.** Agent token secrets are encrypted at rest and validated using constant‑time comparison to reduce timing attacks.  
+## Data protection & encryption using AES-256-GCM
+- **Application-layer encryption for sensitive configs.** Connection configuration and other secrets are encrypted before storage.  
+- **Token secret protection.** Agent token secrets are encrypted at request and validated using constant‑time comparison to reduce timing attacks.  
 - **Third‑party credentials protection.** GitHub tokens and app secrets are stored in encrypted form, and decrypted only when needed.
 
 ## Access control

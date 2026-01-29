@@ -2,9 +2,9 @@
   "name": "landing",
   "version": "0.0.0",
   "type": "module",
-  "packageManager": "pnpm@10.20.0",
+  "packageManager": "pnpm@10.28.2",
   "engines": {
-    "pnpm": "10.20.0"
+    "pnpm": "10.28.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -16,14 +16,16 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "rm -rf .astro node_modules",
+    "deps:update": "npx npm-check-updates -ui"
   },
   "dependencies": {
     "@infisical/sdk": "^4.0.6",
-    "@tabler/icons": "^3.35.0",
-    "@tailwindcss/forms": "^0.5.10",
+    "@tabler/icons": "^3.36.1",
+    "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.16.5",
+    "astro": "^5.17.1",
     "esbuild": "^0.27.2",
     "sharp": "^0.34.5",
     "tailwind-merge": "^3.4.0",
